@@ -1,0 +1,16 @@
+<div class="toolbar-wrapper">
+  <div class="toolbar" role="banner">
+    <div class="logo">
+      <div class="logoPlaceholder">
+        <ng-container >
+          <img src="" onerror="this.src='../../assets/payartologo.png'" alt="logo">
+        </ng-container>
+      </div>
+    </div>
+
+    <div class="right">
+      <span></span>
+      <button class="logOutBtn" routerLink="{{route}}" (click)="buttonText == 'Sign out' ? signOut() : null">{{buttonText}}</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<app-menu
+  [route]="menuCancelRoute"
+  [buttonText]="menuButtonText"
+></app-menu>
+
+
+<ng-container [formGroup]="signInForm">
+  <app-auth-login-page
+    (signInOnSubmit)="signInOnSubmit()"
+  ></app-auth-login-page>
+</ng-container>
+
+<!-- <pre style="margin-top:50px; border: 1px solid red; width: fit-content">
+  {{ signInForm.value | json }}
+</pre> -->
